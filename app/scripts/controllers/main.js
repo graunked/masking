@@ -7,7 +7,16 @@ angular.module('scrollviewTestApp')
 
     $scope.scrollEvents = new EventHandler();
 
-    $scope.colors = _.map(_.range(50), randomColor);
+    var t = function() {
+      return ((Date.now() % 2000 ) / 2000) * Math.PI * 2;
+    };
 
+    $scope.y = function() {
+      return Math.sin(t()) * 100 + 300;
+    };
+
+    $scope.x = function() {
+      return Math.cos(t()) * 100 + 300;
+    };
 
   });
