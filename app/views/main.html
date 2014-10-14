@@ -1,10 +1,12 @@
 <fa-app style="width: 100%; height: 100%; position: absolute; overflow: hidden">
 
-  <mask fa-size="[200, 200]" fa-rotate-z="0.5" fa-translate="[x(), y()]">
-    <fa-surface>
-      <h1>Students</h1>
-      <img height="100%" src="https://unsplash.imgix.net/uploads%2F141223808515744db9995%2F3361b5e1?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6d3e13567fbb824386e7653410c74887" />
-    </fa-surface>
-  </mask>
+  <fa-modifier>
+    <mask fa-size="[300, 300]" content-size="[800, 800]" fa-rotate-z="0.5" fa-translate="[500, 300]">
+      <fa-surface fa-size="[800, 800]">
+        <h1>Students</h1>
+        <img height="100%" src="https://unsplash.imgix.net/uploads%2F141223808515744db9995%2F3361b5e1?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6d3e13567fbb824386e7653410c74887" />
+      </fa-surface>
+    </mask>
+  </fa-modifier>
 
 </fa-app>

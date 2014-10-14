@@ -1,0 +1,10 @@
+<fa-app style="width: 100%; height: 100%;">
+  <fa-modifier fa-size="[undefined,75]">
+    <fa-modifier fa-align="[0.5,0.5]" fa-origin="[0.5,0.5]" fa-size="[undefined,true]">
+      <fa-surface fa-color="'red'" class="text-center padding">
+        <div>test test</div>
+      </fa-surface>
+    </fa-modifier>
+  </fa-modifier>
+
+</fa-app>

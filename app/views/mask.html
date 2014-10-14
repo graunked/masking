@@ -1,0 +1,25 @@
+<fa-modifier>
+<fa-modifier fa-size="faSize()" fa-rotate-z="faRotateZ()" fa-translate="faTranslate()" fa-origin="[0, 0]" fa-transform-order="['translate', 'rotateZ']">
+
+
+  <fa-surface>
+    <div style="width: 100%; height: 100%; padding: 0; position: absolute;">
+      <fa-app style="width: 100%; height: 100%; position: absolute;">
+
+        <fa-modifier fa-rotate-z="-faRotateZ()">
+          <fa-modifier fa-translate="vectorNegate(faTranslate())">
+            <fa-modifier fa-origin="origin()" fa-translate="vectorNegate(faTranslate())">
+              <div ng-transclude></div>
+            </fa-modifier>
+          </fa-modifier>
+        </fa-modifier>
+
+      </fa-app>
+      <div style="width: 100%; height: 100%; position: absolute; border: 10px solid red;">
+      </div>
+    </div>
+  </fa-surface>
+
+</fa-modifier>
+</fa-modifier>
+
