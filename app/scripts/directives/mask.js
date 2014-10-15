@@ -11,7 +11,7 @@ angular.module('scrollviewTestApp')
       $scope.offset = function() {
         var size = $scope.faSize();
         var translate = $scope.faTranslate();
-        var t = [size[0] / 2 - 1000, size[1] / 2 - translate[1]* 2];
+        var t = [size[0] / 2 - translate[0], size[1] / 2 - translate[1]];
         return t;
       };
       $scope.origin = function() {
